@@ -202,7 +202,8 @@ export default defineType({
           {title: 'Inactive', value: 'inactive'},
         ],
       },
-      validation: (Rule) => Rule.required().default('active'),
+      initialValue: 'active',
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'trackInventory',
